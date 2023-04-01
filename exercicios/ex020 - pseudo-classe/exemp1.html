@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 1em Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            font-weight: bold;
+            text-decoration: none;
+            color: red;
+            transition-duration: .5s;
+        }
+
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        a.especial:hover{
+            color:white;
+            background-color: black;
+            text-decoration: none;
+        }
+
+        a.especial::before{
+            content: ">>";
+            font-weight: lighter;
+        }
+
+        a.especial::after{
+            content: "<<";
+            font-weight: lighter;
+        }
+
+        div > p{
+            display: none;
+        }
+
+        div:hover > p{
+            display: block;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando um link</h1>
+    <p>
+        Para aprender HTML5 e CSS3, acesse o <a href="https://gustavoguanabara.github.io" target="_blank">GitHub do Guanabara</a>
+    </p>
+    <p>
+        Se quiser conhecer mais sobre os padrões, visite o site do <a href="https://www.w3c.br" target="_blank">Escritório do W3C no Brasil</a>
+    </p>
+    <p>
+        Para acompanhar os cursos, acesse o <a href="https://www.youtube.com/cursoemvideo/" class="especial" target="_blank">Canal do CursoemVideo</a>
+    </p>
+    <div>
+        Passe o mouse aqui
+        <p>SURPRESAAA!</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsa accusantium illo doloremque nam corrupti? Corrupti atque nisi aspernatur explicabo, similique, temporibus dolorem numquam saepe cumque blanditiis ipsa voluptate facilis.</p>
+</body>
+</html>

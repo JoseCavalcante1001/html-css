@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(243, 237, 237);
+            margin: 0px
+        }
+
+        header{
+            padding: 10px;
+            margin: 0px;
+            background-color: rgb(214, 9, 9);
+            color: white;
+        }
+
+        nav{
+            background-color: rgb(232, 228, 228);
+            padding: 3px;
+            margin: 10px; 
+            border-radius: 10px;
+        }
+
+        nav > ul{
+            box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.263);
+            border-radius: 0px 10px;
+        }
+
+        nav > ul > li > a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > ul > li:hover{
+            color: white
+        }
+
+        nav > ul > li > a:hover{
+            text-decoration: underline;
+            color: white;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        article{
+            background-color: white;
+            
+        }
+
+        article > p{
+            text-align: justify;
+            font-weight: 540;
+        }
+
+        article > aside{
+            background-color: rgb(241, 234, 234);
+            display: inline;
+            border-radius: 5px;
+        }
+
+        article > aside > i{
+            font-weight: 540;
+        }
+
+        footer{
+            background-color: rgb(214, 9, 9);
+            color: white;
+            text-align: center;
+            padding: 17px;
+            margin: 0px;
+            text-decoration: underline;
+        }
+
+
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+            <li><a href="">Link</a></li>
+        </ul>
+        
+    </nav>
+
+    <main>
+        <section id="assuntos">
+            <p>Política, Tecnologia e Educação</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis id ut tempore corporis expedita enim esse quas, doloremque molestiae obcaecati, quo nobis similique consectetur alias dicta sed magni voluptas saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae deserunt at itaque corrupti voluptatem asperiores, porro mollitia, fugiat laborum dicta provident? Earum, unde aliquid. Est harum ipsa id officia deserunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto illum voluptatem accusamus iusto magni neque omnis recusandae praesentium amet unde reiciendis qui, enim, maxime error numquam, rerum odit? Fugiat, deserunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim cumque, nesciunt consequuntur ipsa excepturi delectus maxime blanditiis aut vitae recusandae assumenda magni soluta error doloribus quod ea? Deleniti, ab exercitationem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi nobis quam ipsum sed assumenda dolorem quas corporis! Quis error fugit consequatur, pariatur quaerat nulla, illum facere alias voluptatum corporis adipisci?</p>
+                <aside><i>Artigo criado por José da Silva</i></aside>
+            </article>
+
+            <article>
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por CursoemVideo</p>
+    </footer>
+</body>
+</html>
